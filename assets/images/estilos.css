@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, sans-serif;
   background-color: #fff8f0;
 }
 
@@ -53,16 +53,16 @@ input[type="submit"]:hover {
 }
 
 nav {
-  background-color: #d98880;
+  background-color: #f7c8c8;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 10px;
+  padding: 10px 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #LogoPrincipal {
-  height: 100px;
+  height: 50px;
 }
 
 nav ul {
@@ -75,7 +75,7 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff8f0;
+  color: #e94f7c;
   font-weight: bold;
   padding: 8px 12px;
   transition: all 0.2s ease-in-out;
