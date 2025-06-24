@@ -19,26 +19,6 @@
     "descripcion": "Base crocante con crema de limón y merengue.",
     "precio": 4800,
     "imagen": "assets/images/lemonpie.jpg"
-  },
-  {
-    "categoria": "tartas",
-    "titulo": "Tarta de Manzana",
-    "descripcion": "Con masa quebrada y relleno caramelizado.",
-    "precio": 4700,
-    "imagen": "assets/images/tarta-manzana.jpg"
-  },
-  {
-    "categoria": "budines",
-    "titulo": "Budín de Limón",
-    "descripcion": "Esponjoso y perfumado con ralladura de limón.",
-    "precio": 3500,
-    "imagen": "assets/images/budin-limon.jpg"
-  },
-  {
-    "categoria": "budines",
-    "titulo": "Budín de Chocolate",
-    "descripcion": "Con chips y baño de chocolate.",
-    "precio": 3600,
-    "imagen": "assets/images/budin-chocolate.jpg"
   }
+
 ]

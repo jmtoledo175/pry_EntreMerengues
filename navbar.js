@@ -1,8 +1,10 @@
+const base = "/pry_EntreMerengues/";
+
 const paginas = [
-  { titulo: "Inicio", url: "index.html" },
-  { titulo: "Tortas", url: "tortas.html" },
-  { titulo: "Tartas", url: "tartas.html" },
-  { titulo: "Budines", url: "budines.html" },
+  { titulo: "Inicio", url: base + "index.html" },
+  { titulo: "Tortas", url: base + "tortas.html" },
+  { titulo: "Tartas", url: base + "tartas.html" },
+  { titulo: "Budines", url: base + "budines.html" },
 ];
 
 function crearNavbar(paginas) {
