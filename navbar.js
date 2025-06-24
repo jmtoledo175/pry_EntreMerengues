@@ -27,10 +27,10 @@ function crearNavbar(paginas) {
     linkSesion.textContent = "Cerrar sesión";
     linkSesion.addEventListener("click", () => {
       localStorage.removeItem("logueado");
-      window.location.href = "login.html";
+      window.location.href = "/pry_EntreMerengues/login.html";
     });
   } else {
-    linkSesion.href = "login.html";
+    linkSesion.href = "/pry_EntreMerengues/login.html";
     linkSesion.textContent = "Iniciar sesión";
   }
 
