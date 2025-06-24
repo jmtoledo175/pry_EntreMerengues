@@ -1,22 +1,33 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="assets/images/estilos.css">
-    <link rel="icon" type="image/png" href="assets/images/merengue.png"/>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="assets/images/estilos.css" />
+    <link rel="icon" type="image/png" href="assets/images/merengue.png" />
+  </head>
+  <body>
     <div class="container">
-    <form action="">
-        <input type="email" name="emailLogin" placeholder="Correo electrónico" required>
-        <input type="password" name="password" placeholder="Contraseña" required>
-        <input type="submit" value="Iniciar sesión">
+      <form action="" id="loginForm">
+        <input
+          type="email"
+          name="emailLogin"
+          placeholder="Correo electrónico"
+          required
+          id="email"
+        />
+        <input
+          type="password"
+          name="password"
+          placeholder="Contraseña"
+          required
+          id="password"
+        />
+        <input type="submit" value="Iniciar sesión" />
         <h5>¿No tienes cuenta? <a href="register.html">Registrate</a></h5>
-    </form>
-    
-</div>
-<h3><a href="index.html">Inicio</a></h3>
-</body>
+      </form>
+    </div>
+    <h3><a href="index.html">Inicio</a></h3>
+    <script src="login.js" defer></script>
+  </body>
 </html>

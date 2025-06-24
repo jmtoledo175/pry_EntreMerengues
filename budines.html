@@ -5,35 +5,22 @@
     <title>Entre Merengues Budines</title>
     <link rel="stylesheet" href="assets/images/estilos.css" />
     <link rel="icon" type="image/png" href="assets/images/merengue.png" />
+    <link rel="stylesheet" href="productos.css" />
   </head>
   <body>
     <nav>
-      <a href="index.html"><img
-        src="assets/images/merengue.png"
+      <a href="index.html">
+        <img
+          src="assets/images/merengue.png"
           alt="Logo Principal"
           id="LogoPrincipal"
-        /></a>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="tortas.html">Tortas</a></li>
-        <li><a href="tartas.html">Tartas</a></li>
-        <li><a href="budines.html">Budines</a></li>
-        <li><a href="login.html">Iniciar sesión</a></li>
-        <li><a href="#">Salir</a></li>
-      </ul>
+        />
+      </a>
+      <ul id="nav-links"></ul>
     </nav>
 
-    <h3 class="TituloPersonalizado">Budines</h3>
-
-    <div class="ContainerIndex">
-      <div class="card card-merengue" >
-        <img src="assets/images/budin-limon.jpg" class="CardImg"  alt="Selva Negra">
-        <div class="card-body">
-          <h5 class="card-title">Budín de limón</h5>
-          <p class="card-text">El budín de limón es un clásico. Es muy esponjoso y tiene un sabor fresco y cítrico.</p>
-          <a href="#" class="btn btn-merengue">Ver más</a>
-        </div>
-      </div>
-      </div>
+    <section id="productos" class="contenedor-productos"></section>
+    <script src="budines.js"></script>
+    <script src="navbar.js"></script>
   </body>
 </html>

@@ -1,38 +1,26 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entre Merengues Tortas</title>
     <link rel="stylesheet" href="assets/images/estilos.css" />
-    <link rel="icon" type="image/png" href="assets/images/merengue.png"/>
-</head>
-<body>
+    <link rel="icon" type="image/png" href="assets/images/merengue.png" />
+    <link rel="stylesheet" href="productos.css" />
+  </head>
+  <body>
     <nav>
-        <a href="index.html"><img
+      <a href="index.html">
+        <img
           src="assets/images/merengue.png"
-            alt="Logo Principal"
-            id="LogoPrincipal"
-          /></a>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="tortas.html">Tortas</a></li>
-          <li><a href="tartas.html">Tartas</a></li>
-          <li><a href="budines.html">Budines</a></li>
-          <li><a href="login.html">Iniciar sesión</a></li>
-          <li><a href="#">Salir</a></li>
-        </ul>
-      </nav>
-      <h3 class="TituloPersonalizado">Tortas</h3>
+          alt="Logo Principal"
+          id="LogoPrincipal"
+        />
+      </a>
+      <ul id="nav-links"></ul>
+    </nav>
 
-      <div class="ContainerIndex">
-        <div class="card card-merengue" >
-          <img src="assets/images/torta-rogel.jpg" class="CardImg"  alt="Selva Negra">
-          <div class="card-body">
-            <h5 class="card-title">Torta Rogel</h5>
-            <p class="card-text">Se compone de varias capas de masa crocante y delgada, intercaladas con dulce de leche y cubiertas con un merengue.</p>
-            <a href="#" class="btn btn-merengue">Ver más</a>
-          </div>
-        </div>
-        </div>
-</body>
+    <section id="productos" class="contenedor-productos"></section>
+    <script src="tortas.js"></script>
+    <script src="navbar.js"></script>
+  </body>
 </html>
