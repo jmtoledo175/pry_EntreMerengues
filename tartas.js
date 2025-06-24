@@ -1,37 +1,47 @@
-const productos = [
-  {
-    titulo: "Tarta de Manzana",
-    descripcion: " Se prepara con una base de masa quebrada, y se rellena con manzanas caramelizadas.",
-    precio: 4500,
-    imagen: "assets/images/tarta-manzana.jpg"
-  },
-  
-];
-
+fetch("tartas.json")
+  .then(res => res.json())
+  .then(tartas => mostrarCards(tartas))
+  .catch(err => console.error("Error al cargar las tartas:", err));
 
 function mostrarCards(productos) {
   const contenedor = document.getElementById("productos");
+  const categoriasMostradas = new Set();
 
-  productos.forEach(producto => {
-    const card = document.createElement("div");
-    card.className = "card-producto";
+  productos.forEach((producto) => {
+    if (!categoriasMostradas.has(producto.categoria)) {
+      const productosPorCategoria = productos
+        .filter((p) => p.categoria === producto.categoria)
+       
+      productosPorCategoria.forEach((p) => {
+        const card = document.createElement("div");
+        card.className = "card-producto";
+        card.innerHTML = `
+          <img src="${p.imagen}" class="img-producto" alt="${p.titulo}">
+          <h3>${p.titulo}</h3>
+          <p>${p.descripcion}</p>
+          <p class="precio">$${p.precio}</p>
+          <div class="contador">
+            <button class="btn-menos">-</button>
+            <span class="cantidad">0</span>
+            <button class="btn-mas">+</button>
+          </div>
+          <button class="btn-merengue">Añadir al carrito</button>
+        `;
+        contenedor.appendChild(card);
 
-    card.innerHTML = `
-      <img src="${producto.imagen}" alt="${producto.titulo}" class="img-producto">
-      <h3>${producto.titulo}</h3>
-      <p>${producto.descripcion}</p>
-      <p class="precio">$${producto.precio}</p>
-      <div class="contador">
-        <button class="btn-menos">-</button>
-        <span class="cantidad">0</span>
-        <button class="btn-mas">+</button>
-      </div>
-    `;
+    
+        const btnMas = card.querySelector(".btn-mas");
+        const btnMenos = card.querySelector(".btn-menos");
+        const span = card.querySelector(".cantidad");
+        let cantidad = 0;
 
-    contenedor.appendChild(card);
+        btnMas.onclick = () => (span.textContent = ++cantidad);
+        btnMenos.onclick = () => {
+          if (cantidad > 0) span.textContent = --cantidad;
+        };
+      });
 
-   
+      categoriasMostradas.add(producto.categoria);
+    }
   });
 }
-
-mostrarCards(productos);

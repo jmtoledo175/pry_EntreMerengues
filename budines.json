@@ -1,0 +1,30 @@
+[
+  {
+    "categoria": "budines",
+    "titulo": "Budín de Limón",
+    "descripcion": "Esponjoso y perfumado con ralladura de limón.",
+    "precio": 3500,
+    "imagen": "assets/images/budin-limon.jpg"
+  },
+  {
+    "categoria": "budines",
+    "titulo": "Budín de Chocolate",
+    "descripcion": "Con chips de chocolate y cobertura suave.",
+    "precio": 3600,
+    "imagen": "assets/images/budin-chocolate.jpg"
+  },
+  {
+    "categoria": "budines",
+    "titulo": "Budín de Naranja",
+    "descripcion": "Con jugo natural de naranja y glasé casero.",
+    "precio": 3550,
+    "imagen": "assets/images/budin-naranja.jpg"
+  },
+  {
+    "categoria": "budines",
+    "titulo": "Budín de Zanahoria",
+    "descripcion": "Húmedo y saludable, con nueces y canela.",
+    "precio": 3650,
+    "imagen": "assets/images/budin-zanahoria.jpg"
+  }
+]

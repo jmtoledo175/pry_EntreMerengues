@@ -1,0 +1,30 @@
+[
+  {
+    "categoria": "tartas",
+    "titulo": "Lemon Pie",
+    "descripcion": "Base crocante con crema de limón y merengue italiano.",
+    "precio": 4800,
+    "imagen": "assets/images/lemonpie.jpg"
+  },
+  {
+    "categoria": "tartas",
+    "titulo": "Tarta de Manzana",
+    "descripcion": "Clásica tarta de manzana caramelizada con canela.",
+    "precio": 4700,
+    "imagen": "assets/images/tarta-manzana.jpg"
+  },
+  {
+    "categoria": "tartas",
+    "titulo": "Pastafrola",
+    "descripcion": "Masa suave rellena con dulce de membrillo.",
+    "precio": 4400,
+    "imagen": "assets/images/pastafrola.jpg"
+  },
+  {
+    "categoria": "tartas",
+    "titulo": "Tarta de Frutilla",
+    "descripcion": "Base de masa, crema pastelera y frutillas frescas.",
+    "precio": 5000,
+    "imagen": "assets/images/tarta-frutilla.jpg"
+  }
+]
