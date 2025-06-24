@@ -17,7 +17,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
   if (usuarioValido) {
     localStorage.setItem("logueado", "true");
-    window.location.href = "/privado/tienda.html";
+    window.location.href = "privado/tienda.html";
   } else {
     alert("Usuario o contraseña incorrectos");
   }

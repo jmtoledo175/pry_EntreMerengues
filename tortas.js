@@ -1,18 +1,17 @@
 const productos = [
   {
     titulo: "Torta Rogel",
-    descripcion: "Se compone de varias capas de masa crocante y delgada, intercaladas con dulce de leche y cubiertas con un merengue.",
+    descripcion:
+      "Se compone de varias capas de masa crocante y delgada, intercaladas con dulce de leche y cubiertas con un merengue.",
     precio: 4500,
-    imagen: "assets/images/tarta-rogel.jpg"
+    imagen: "assets/images/torta-rogel.jpg",
   },
-  
 ];
-
 
 function mostrarCards(productos) {
   const contenedor = document.getElementById("productos");
 
-  productos.forEach(producto => {
+  productos.forEach((producto) => {
     const card = document.createElement("div");
     card.className = "card-producto";
 
@@ -29,8 +28,6 @@ function mostrarCards(productos) {
     `;
 
     contenedor.appendChild(card);
-
-   
   });
 }
 
