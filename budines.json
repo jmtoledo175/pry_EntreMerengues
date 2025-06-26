@@ -1,5 +1,6 @@
 [
   {
+     "id": "9",
     "categoria": "budines",
     "titulo": "Budín de Limón",
     "descripcion": "Esponjoso y perfumado con ralladura de limón.",
@@ -7,6 +8,7 @@
     "imagen": "assets/images/budin-limon.jpg"
   },
   {
+     "id": "10",
     "categoria": "budines",
     "titulo": "Budín de Chocolate",
     "descripcion": "Con chips de chocolate y cobertura suave.",
@@ -14,6 +16,7 @@
     "imagen": "assets/images/budin-chocolate.jpg"
   },
   {
+     "id": "11",
     "categoria": "budines",
     "titulo": "Budín de Naranja",
     "descripcion": "Con jugo natural de naranja y glasé casero.",
@@ -21,6 +24,7 @@
     "imagen": "assets/images/budin-naranja.jpg"
   },
   {
+     "id": "12",
     "categoria": "budines",
     "titulo": "Budín de Zanahoria",
     "descripcion": "Húmedo y saludable, con nueces y canela.",

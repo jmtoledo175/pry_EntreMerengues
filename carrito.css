@@ -1,0 +1,105 @@
+nav {
+  background-color: #ffe6da;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 0.8rem 1.5rem;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo-navbar {
+  height: 60px;
+  width: auto;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  display: inline;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #a0522d;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #e56a4c;
+}
+
+#cart-count {
+  background-color: #ff8c69;
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  margin-left: 0.3rem;
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdf9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #a0522d;
+}
+
+h3#total {
+  text-align: right;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+}
+
+button {
+  background-color: #ff8c69;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e56a4c;
+}

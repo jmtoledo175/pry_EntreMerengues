@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "categoria": "tortas",
     "titulo": "Chocotorta",
     "descripcion": "Clásico argentino con dulce de leche y galletitas.",
@@ -7,6 +8,7 @@
     "imagen": "../assets/images/chocotorta.jpg"
   },
   {
+    "id": "2",
     "categoria": "tortas",
     "titulo": "Selva Negra",
     "descripcion": "Torta de chocolate con cerezas y crema.",
@@ -14,6 +16,7 @@
     "imagen": "../assets/images/selva-negra.jpeg"
   },
   {
+    "id": "4",
     "categoria": "tortas",
     "titulo": "Carrot Cake",
     "descripcion": "Torta de zanahoria con frosting de queso.",
@@ -21,6 +24,7 @@
     "imagen": "../assets/images/carrot.jpg"
   },
   {
+    "id": "3",
     "categoria": "tartas",
     "titulo": "Lemon Pie",
     "descripcion": "Base crocante con crema de limón y merengue.",
@@ -28,6 +32,7 @@
     "imagen": "../assets/images/lemonpie.jpg"
   },
   {
+    "id": "6",
     "categoria": "tartas",
     "titulo": "Tarta de Manzana",
     "descripcion": "Con masa quebrada y relleno de manzana caramelizada.",
@@ -35,6 +40,7 @@
     "imagen": "../assets/images/tarta-manzana.jpg"
   },
   {
+    "id": "7",
     "categoria": "tartas",
     "titulo": "Pastafrola",
     "descripcion": "Tradicional con dulce de membrillo y masa suave.",
@@ -42,6 +48,7 @@
     "imagen": "../assets/images/pastafrola.jpg"
   },
   {
+    "id": "9",
     "categoria": "budines",
     "titulo": "Budín de Limón",
     "descripcion": "Esponjoso y perfumado con ralladura de limón.",
@@ -49,6 +56,7 @@
     "imagen": "../assets/images/budin-limon.jpg"
   },
   {
+    "id": "10",
     "categoria": "budines",
     "titulo": "Budín de Chocolate",
     "descripcion": "Con chips de chocolate y cobertura suave.",
@@ -56,6 +64,7 @@
     "imagen": "../assets/images/budin-chocolate.jpg"
   },
   {
+    "id": "11",
     "categoria": "budines",
     "titulo": "Budín de Naranja",
     "descripcion": "Con jugo natural de naranja y glasé.",

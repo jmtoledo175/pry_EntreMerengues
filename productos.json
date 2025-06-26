@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "categoria": "tortas",
     "titulo": "Chocotorta",
     "descripcion": "Clásico argentino con dulce de leche y galletitas.",
@@ -7,6 +8,7 @@
     "imagen": "assets/images/chocotorta.jpg"
   },
   {
+    "id": "2",
     "categoria": "tortas",
     "titulo": "Selva Negra",
     "descripcion": "Torta de chocolate con cerezas y crema.",
@@ -14,11 +16,11 @@
     "imagen": "assets/images/selva-negra.jpeg"
   },
   {
+    "id": "3",
     "categoria": "tartas",
     "titulo": "Lemon Pie",
     "descripcion": "Base crocante con crema de limón y merengue.",
     "precio": 4800,
     "imagen": "assets/images/lemonpie.jpg"
   }
-
 ]

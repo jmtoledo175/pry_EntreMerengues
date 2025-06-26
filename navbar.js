@@ -38,5 +38,24 @@ function crearNavbar(paginas) {
 
   liSesion.appendChild(linkSesion);
   ul.appendChild(liSesion);
+
+  const liCarrito = document.createElement("li");
+  const linkCarrito = document.createElement("a");
+  linkCarrito.href = "/pry_EntreMerengues/carrito.html";
+  linkCarrito.innerHTML = `🛒 Carrito <span id="cart-count">(0)</span>`;
+  liCarrito.appendChild(linkCarrito);
+  ul.appendChild(liCarrito);
 }
+
+function actualizarCarritoUI() {
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  const totalCantidad = carrito.reduce((acc, item) => acc + item.cantidad, 0);
+
+  const contador = document.getElementById("cart-count");
+  if (contador) {
+    contador.textContent = `(${totalCantidad})`;
+  }
+}
+
 crearNavbar(paginas);
+actualizarCarritoUI();

@@ -1,19 +1,22 @@
 [
-  {
+   {
+    "id": "1",
     "categoria": "tortas",
     "titulo": "Chocotorta",
-    "descripcion": "Clásico argentino con dulce de leche y galletitas chocolinas.",
+    "descripcion": "Clásico argentino con dulce de leche y galletitas.",
     "precio": 4500,
     "imagen": "assets/images/chocotorta.jpg"
   },
-  {
+ {
+    "id": "2",
     "categoria": "tortas",
     "titulo": "Selva Negra",
-    "descripcion": "Torta de chocolate con crema chantilly y cerezas.",
-    "precio": 5200,
+    "descripcion": "Torta de chocolate con cerezas y crema.",
+    "precio": 5000,
     "imagen": "assets/images/selva-negra.jpeg"
   },
   {
+    "id": "4",
     "categoria": "tortas",
     "titulo": "Carrot Cake",
     "descripcion": "Torta de zanahoria con nueces y cobertura de queso crema.",
@@ -21,6 +24,7 @@
     "imagen": "assets/images/carrot.jpg"
   },
   {
+    "id": "5",
     "categoria": "tortas",
     "titulo": "Torta Oreo",
     "descripcion": "Capas de crema y galletitas oreo con base húmeda de chocolate.",

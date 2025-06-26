@@ -79,3 +79,21 @@
   font-weight: bold;
   color: #333;
 }
+
+.btn-agregar {
+  margin-top: 14px;
+  background-color: #e94f7c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-agregar:hover {
+  background-color: #d13e6b;
+  transform: scale(1.03);
+}
