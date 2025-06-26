@@ -1,4 +1,4 @@
-const base = "/pry_EntreMerengues/";
+const base = location.pathname.includes("/privado/") ? "/pry_Entre_Merengues/privado/" : "/pry_Entre_Merengues/";
 
 const paginas = [
   { titulo: "Inicio", url: base + "index.html" },
