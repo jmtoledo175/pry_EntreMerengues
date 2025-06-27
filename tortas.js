@@ -1,7 +1,7 @@
 fetch("tortas.json")
-  .then(res => res.json())
-  .then(tortas => mostrarCards(tortas))
-  .catch(err => console.error("Error al cargar las tortas:", err));
+  .then((res) => res.json())
+  .then((tortas) => mostrarCards(tortas))
+  .catch((err) => console.error("Error al cargar las tortas:", err));
 
 function mostrarCards(productos) {
   const contenedor = document.getElementById("productos");
@@ -9,9 +9,10 @@ function mostrarCards(productos) {
 
   productos.forEach((producto) => {
     if (!categoriasMostradas.has(producto.categoria)) {
-      const productosPorCategoria = productos
-        .filter((p) => p.categoria === producto.categoria)
-       
+      const productosPorCategoria = productos.filter(
+        (p) => p.categoria === producto.categoria
+      );
+
       productosPorCategoria.forEach((p) => {
         const card = document.createElement("div");
         card.className = "card-producto";
@@ -29,7 +30,6 @@ function mostrarCards(productos) {
         `;
         contenedor.appendChild(card);
 
-    
         const btnMas = card.querySelector(".btn-mas");
         const btnMenos = card.querySelector(".btn-menos");
         const span = card.querySelector(".cantidad");

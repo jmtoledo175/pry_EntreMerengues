@@ -1,4 +1,5 @@
-const base = location.pathname.includes("/privado/") ? "/pry_Entre_Merengues/privado/" : "/pry_Entre_Merengues/";
+const estaEnPrivado = window.location.pathname.includes("/privado/");
+const base = estaEnPrivado ? "../" : "";
 
 const paginas = [
   { titulo: "Inicio", url: base + "index.html" },
@@ -29,10 +30,10 @@ function crearNavbar(paginas) {
     linkSesion.textContent = "Cerrar sesión";
     linkSesion.addEventListener("click", () => {
       localStorage.removeItem("logueado");
-      window.location.href = "/pry_EntreMerengues/login.html";
+      window.location.href = "login.html";
     });
   } else {
-    linkSesion.href = "/pry_EntreMerengues/login.html";
+    linkSesion.href = "login.html";
     linkSesion.textContent = "Iniciar sesión";
   }
 
@@ -41,7 +42,7 @@ function crearNavbar(paginas) {
 
   const liCarrito = document.createElement("li");
   const linkCarrito = document.createElement("a");
-  linkCarrito.href = "/pry_EntreMerengues/carrito.html";
+  linkCarrito.href = "carrito.html";
   linkCarrito.innerHTML = `🛒 Carrito <span id="cart-count">(0)</span>`;
   liCarrito.appendChild(linkCarrito);
   ul.appendChild(liCarrito);
