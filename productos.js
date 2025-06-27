@@ -49,6 +49,7 @@ function mostrarCards(productos) {
           const producto = productos.find((p) => p.id == id);
           if (producto && cantidad > 0) {
             agregarAlCarritoConCantidad(producto, cantidad);
+            mostrarMensajeAgregado();
           }
         });
       });
@@ -56,6 +57,21 @@ function mostrarCards(productos) {
       categoriasMostradas.add(producto.categoria);
     }
   });
+}
+function mostrarMensajeAgregado() {
+  const div = document.createElement("div");
+  div.textContent = "✅ Producto añadido al carrito";
+  div.style.position = "fixed";
+  div.style.bottom = "20px";
+  div.style.right = "20px";
+  div.style.background = "#e94f7c";
+  div.style.color = "white";
+  div.style.padding = "10px 20px";
+  div.style.borderRadius = "10px";
+  div.style.boxShadow = "0 2px 8px rgba(0,0,0,0.2)";
+  div.style.zIndex = "9999";
+  document.body.appendChild(div);
+  setTimeout(() => div.remove(), 2000);
 }
 
 function agregarAlCarritoConCantidad(producto, cantidadNueva) {
