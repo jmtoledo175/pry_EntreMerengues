@@ -42,7 +42,7 @@ function crearNavbar(paginas) {
 
   const liCarrito = document.createElement("li");
   const linkCarrito = document.createElement("a");
-  linkCarrito.href = "carrito.html";
+  linkCarrito.href = estaEnPrivado ? "../carrito.html" : "carrito.html";
   linkCarrito.innerHTML = `🛒 Carrito <span id="cart-count">(0)</span>`;
   liCarrito.appendChild(linkCarrito);
   ul.appendChild(liCarrito);
