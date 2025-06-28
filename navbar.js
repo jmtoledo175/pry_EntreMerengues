@@ -30,10 +30,10 @@ function crearNavbar(paginas) {
     linkSesion.textContent = "Cerrar sesión";
     linkSesion.addEventListener("click", () => {
       localStorage.removeItem("logueado");
-      window.location.href = "login.html";
+      window.location.href = estaEnPrivado ? "../login.html" : "login.html";
     });
   } else {
-    linkSesion.href = "login.html";
+    window.location.href = estaEnPrivado ? "../login.html" : "login.html";
     linkSesion.textContent = "Iniciar sesión";
   }
 
